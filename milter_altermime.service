@@ -1,0 +1,8 @@
+[Service]
+Type=simple
+ExecStart=/opt/milter_altermime/milter_altermime -i /opt/milter_altermime/milter_altermime.ini 
+Restart=always
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=%n
